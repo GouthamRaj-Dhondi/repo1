@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stumps</title>
+    <style>
+    body{
+        display: flex;
+        height:100vh;
+        align-items: center;
+        justify-content: center;
+    }
+button{
+      margin:auto;
+      padding:5px 15px;
+      text-align: center;
+}
+button:first-child{
+    background: rgb(221, 10, 10);
+    border-radius: 5px;
+    padding:5px 20px;
+    border:none;
+
+}
+button:nth-child(2){
+    background: rgb(10, 158, 221);
+    border-radius: 5px;
+    padding:5px 20px;
+    border:none;
+}
+button:nth-child(3){
+    background: rgb(221, 10, 91);
+    border-radius: 5px;
+    padding:5px 30px;
+    border:none;
+}
+    </style>
+</head>
+<body>
+      <button class="bat-button" onclick="
+       randomNum=(Math.random())*3;
+       computerChoice;
+      if(randomNum<=1)    {
+        computerChoice=`bat`;
+    }
+    else if(randomNum>=1 && randomNum<=2){
+        computerChoice=`ball`;
+    }
+    else{
+        computerChoice=`Stumps`;
+    }
+    if(computerChoice==='bat'){
+        alert(`User and computer choices are same`);
+    }
+    else if(computerChoice==='ball'){ 
+        alert('User Won !');
+    }
+    else{
+        alert('computer won !');
+    }
+      ;">Bat</button>
+      <button class="ball-button" onclick="
+      randomNum=(Math.random())*3;
+      computerChoice;
+      if(randomNum<=1)    {
+        computerChoice=`bat`;
+    }
+    else if(randomNum>=1 && randomNum<=2){
+        computerChoice=`ball`;
+    }
+    else{
+        computerChoice=`Stumps`;
+    }
+    if(computerChoice==='ball'){
+        alert(`User and computer choices are same`);
+    }
+    else if(computerChoice==='Stumps'){ 
+        alert('User Won !');
+    }
+    else{
+        alert('computer won !');
+    }
+      ;">Ball</button>
+      <button onclick="
+      randomNum=(Math.random())*3;
+      computerChoice;
+      if(randomNum<=1)    {
+        computerChoice=`bat`;
+    }
+    else if(randomNum>=1 && randomNum<=2){
+        computerChoice=`ball`;
+    }
+    else{
+        computerChoice=`Stumps`;
+    }
+    if(computerChoice==='Stumps'){
+        alert(`User and computer choices are same`);
+    }
+    else if(computerChoice==='bat'){ 
+        alert('User Won !');
+    }
+    else{
+        alert('computer won !');
+    }
+      ;">Stumps</button><br>
+      <h1 class="set_text">Hello this is bat ball game</h1>
+    <script>
+        let randomNum;
+        let computerChoice;
+    </script>
+</body>
+</html>

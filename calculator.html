@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+        <div id="calculator">
+            <h1>Calculator</h1>
+            <input type="text" class="display" readonly>
+            <div class="num-buttons">
+                <span class="input-button" onclick="inputNum=inputNum+9;
+                document.querySelector('.display').value=inputNum;">9</span>
+                <span class="input-button" onclick="inputNum=inputNum+8;
+                document.querySelector('.display').value=inputNum;">8</span>
+                <span class="input-button" onclick="inputNum=inputNum+7;
+                document.querySelector('.display').value=inputNum;">7</span>
+                <span class="input-button" onclick="inputNum=inputNum+`+`;
+                document.querySelector('.display').value=inputNum;">+</span>
+            </div>
+            <div class="num-buttons">
+                <span class="input-button" onclick="inputNum=inputNum+6;
+                document.querySelector('.display').value=inputNum;">6</span>
+                <span class="input-button" onclick="inputNum=inputNum+5;
+                document.querySelector('.display').value=inputNum;">5</span>
+                <span class="input-button" onclick="inputNum=inputNum+4;
+                document.querySelector('.display').value=inputNum;">4</span>
+                <span class="input-button" onclick="inputNum=inputNum+`-`;
+                document.querySelector('.display').value=inputNum;">-</span>
+            </div>
+            <div class="num-buttons">
+                <span class="input-button" onclick="inputNum=inputNum+3;
+                document.querySelector('.display').value=inputNum;">3</span>
+                <span class="input-button" onclick="inputNum=inputNum+2;
+                document.querySelector('.display').value=inputNum;">2</span>
+                <span class="input-button" onclick="inputNum=inputNum+1;
+                document.querySelector('.display').value=inputNum;">1</span>
+                <span class="input-button" onclick="inputNum=inputNum+`*`;
+                document.querySelector('.display').value=inputNum;">*</span>
+            </div>
+            <div class="num-buttons">
+                <span class="input-button" onclick="inputNum=inputNum+0;
+                document.querySelector('.display').value=inputNum;">0</span>
+                <span class="input-button" onclick="inputNum=``;document.querySelector('.display').value=``;">C</span>
+                <span class="input-button equals" onclick="inputNum=eval(inputNum);
+                document.querySelector('.display').value=inputNum">=</span>
+                <span class="input-button" onclick="inputNum=inputNum+`/`;
+                document.querySelector('.display').value=inputNum;">/</span>
+            </div>
+        </div>
+        <script>
+             let inputNum='';
+             document.querySelector('.display').value=inputNum;
+        </script>
+</body>
+</html>
